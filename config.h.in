@@ -1,0 +1,3 @@
+#pragma once
+
+#define ABOUT_TEXT "@ABOUT_TEXT@"

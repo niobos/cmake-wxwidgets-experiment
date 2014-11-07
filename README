@@ -1,0 +1,13 @@
+mkdir build
+cd build
+cmake ..
+make
+# hello works
+make install
+# hello segfaults
+
+cd hello.app/Contents/MacOS
+rm libwx_baseu-3.0.dylib
+ln -s libwx_baseu-3.0.*.dylib libwx_baseu-3.0.dylib
+
+# hello works again
